@@ -45,14 +45,19 @@ void checkPalindrome() {
   } else {
     print("it is not a palindrome");
   }
-  int rows = 4;
-  int columns = 4;
+ void main() {
+    print("Enter the rows:");
+    int rows = int.parse(stdin.readLineSync()!);
 
-  for (int i = 1; i <= rows; i++) {
-    for (int j = 1; j <= i; j++) {
-      print('$i ');
-    }
-    print('');
+    printnumberTriangle(rows);
+  }
+
+  List<int> numbers = [2, 4, 3, 1, 4, 5, 6, 8, 9, 7, 10, 15];
+  print("numbers greater than five:");
+  for (int numbers in numbers) {
+    if (numbers > 5) {
+      print(numbers);
+    }  
   }
   List<int> numbers = [2, 4, 3, 1, 4, 5, 6, 8, 9, 7, 10, 15];
   print("numbers greater than five:");
