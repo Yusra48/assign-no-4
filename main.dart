@@ -44,6 +44,15 @@ void checkPalindrome() {
     print("it is a palindrome");
   } else {
     print("it is not a palindrome");
+    void printnumberTriangle(int n) {
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= i; j++) {
+        stdout.write('$i');
+      }
+      stdout.write('\n');
+    }
+  }
+    
   }
  void main() {
     print("Enter the rows:");
